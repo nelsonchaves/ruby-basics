@@ -7,6 +7,9 @@
 - block add a little bit of clarity when a method requires a little more detail
 - a block is not a method. a method is an message that is sent to an object
 - a block is attached to a method call to an object
+- a block is the special attachment to a method such as .times or .upto that clarifies what the method does on every iteration
+
+
 =end
 
 3.times { puts "Boris is awesome!" }
