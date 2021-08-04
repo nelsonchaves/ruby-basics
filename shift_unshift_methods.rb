@@ -19,5 +19,12 @@ arr.unshift(25)
 p arr
 arr.unshift(100, 500, 1000)
 p arr
+puts
 
-p "Equality and Inequality Operators with Arrays".downcase
+arr = %w[A B C D E]
+p arr
+p arr.shift
+p arr.unshift("Z")
+p arr.unshift("K")
+p arr.shift
+p arr
