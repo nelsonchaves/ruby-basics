@@ -19,3 +19,5 @@ arr.unshift(25)
 p arr
 arr.unshift(100, 500, 1000)
 p arr
+
+p "Equality and Inequality Operators with Arrays".downcase
