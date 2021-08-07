@@ -19,3 +19,16 @@ until i == animals.length
 	puts animals
 	i += 1
 end
+
+# def scoring(array)
+#   array.each do |user|
+#     unless user.is_admin?
+#       user.update_score
+#     end
+#   end
+# end
+
+loop do
+    coder.practice
+    break if coder.oh_one?
+end
