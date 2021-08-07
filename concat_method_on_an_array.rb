@@ -33,3 +33,13 @@ end
 p custom_concat(a, b)
 p a
 p b
+puts
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+p a + b
+p a
+p b
+a.concat(b)
+p a
+p b
