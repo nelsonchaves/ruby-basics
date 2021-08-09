@@ -9,6 +9,12 @@ p locations
 locations.push("Saloon", "Bathroom")
 p locations
 puts
+
+# dynamic method
+def end_arr_add(arr, element)
+    arr.push(element)
+    arr
+end
 =begin
 - The Shovel Operator
 - basically this is pointing to what it is that we want to add into. In this case, our locations array

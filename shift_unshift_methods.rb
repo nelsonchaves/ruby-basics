@@ -28,3 +28,9 @@ p arr.unshift("Z")
 p arr.unshift("K")
 p arr.shift
 p arr
+
+#dynamic method
+def begin_arr_add(arr, element)
+    arr.unshift(element)
+    arr
+end
