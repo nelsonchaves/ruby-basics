@@ -23,3 +23,15 @@ p sentence.split(" i")
 
 words = p sentence.split(" ")
 words.each { |word| puts word.length }
+
+def longest_word(sentence)
+  big_word = ""
+  sentence.split.each do |word|
+    if word.length >= big_word.length
+      big_word = word
+    end
+  end
+  p big_word
+end
+
+longest_word("Bobby loves bif scary kangaroos")
