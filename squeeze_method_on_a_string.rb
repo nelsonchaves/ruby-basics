@@ -12,13 +12,29 @@ puts
 # bang method will modify the original string
 puts sentence.squeeze!(" h")
 puts sentence
+puts
 
 def custom_squeeze(string)
 	final = ""
 	chars = string.split("")
 	chars.each_with_index do |char, index|
-		if char == chars[index]
+		if char == chars[index + 1]
+			next
+		else
+			final << char
+		end
 	end
+	final
+end
+
+p custom_squeeze(sentence)
+p custom_squeeze(sentence) == sentence.squeeze
+# Refactored
+def custom_squeeze(string)
+	final = ""
+	chars = string.split("")
+	chars.each_with_index { |char, index| char == chars[index + 1] ? next : final << char }
+	final
 end
 
 p custom_squeeze(sentence)
