@@ -77,4 +77,7 @@
 #     arr.take(n)
 # end
 # p first_n(arr, 2)
-#
+# #
+# states = {NJ: "New Jersey", NY: "New York", KY: "Kansas"}
+# states[:KY] = "Kentucky"
+# p states[:KY]
