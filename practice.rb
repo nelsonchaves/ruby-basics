@@ -47,38 +47,39 @@
 # p start_and_length(arr, 1, 2)
 
 #
-arr = [9, 5, 1, 2, 3, 4, 0, -1]
-
-p arr[-1]
-p arr.first
-p arr.last
-# the first 3 elements
-p arr.take(3)
-# Everything but the first n elements of the array can be accessed using
-p arr.drop(3)
-puts
-
-def neg_pos(arr, index)
-    arr[-index]
-end
-p neg_pos(arr, 2)
-
-def first_element(arr)
-    arr.first
-end
-p first_element(arr)
-
-def last_element(arr)
-    arr.last
-end
-p last_element(arr)
-
-def first_n(arr, n)
-    arr.take(n)
-end
-p first_n(arr, 2)
-
-def drop_n(arr, n)
-    arr.drop(n)
-end
-p drop_n(arr, 3)
+# arr = [9, 5, 1, 2, 3, 4, 0, -1]
+#
+# p arr[-1]
+# p arr.first
+# p arr.last
+# # the first 3 elements
+# p arr.take(3)
+# # Everything but the first n elements of the array can be accessed using
+# p arr.drop(3)
+# puts
+#
+# def neg_pos(arr, index)
+#     arr[-index]
+# end
+# p neg_pos(arr, 2)
+#
+# def first_element(arr)
+#     arr.first
+# end
+# p first_element(arr)
+#
+# def last_element(arr)
+#     arr.last
+# end
+# p last_element(arr)
+#
+# def first_n(arr, n)
+#     arr.take(n)
+# end
+# p first_n(arr, 2)
+#
+# def drop_n(arr, n)
+#     arr.drop(n)
+# end
+# p drop_n(arr, 3)
+arr = [3, 4, 2, 1, 2, 3, 4, 5, 6, 0, -2]
