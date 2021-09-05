@@ -78,8 +78,3 @@
 # end
 # p first_n(arr, 2)
 #
-# def drop_n(arr, n)
-#     arr.drop(n)
-# end
-# p drop_n(arr, 3)
-arr = [3, 4, 2, 1, 2, 3, 4, 5, 6, 0, -2]
