@@ -6,3 +6,5 @@ puts cars.key?("ford")
 
 puts cars.value?("camry")
 puts cars.value?(23)
+
+p "Hashes as Method Arguments".downcase
