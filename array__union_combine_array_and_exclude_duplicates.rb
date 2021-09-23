@@ -10,9 +10,14 @@ b = [1, 1, 2, 2, 3, 3, 3]
 def custom_union(arr1, arr2)
   result = []
   arr1.each { |element| result << element unless result.include?(element)}
-  arr2.each { |element| result << element unless result.include?(element)}
+  arr2.each do |element|
+    unless result.include?(element)
+      result << element
+    end
+  end
   result
 end
+
 p custom_union(a, b)
 p a
 p b
