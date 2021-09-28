@@ -51,3 +51,33 @@ end
 puts
 
 10.times { |count| puts "#{3 * (count + 1)}" }
+puts
+
+=begin
+A block is a collection of code to be executed.
+a block is not an object.
+a block is an attachment that follows a method call
+blocks alter the execution of the method
+block is not an argument / parameter to the method
+blocks can be defined with { } or do end.
+A block can get or update the value of local variables within the block.
+That's what we call the block variables.
+
+METHODS vs. BLOCKS
+Methods can be invoked over and over
+in comparison, a block will only be called once, then disappear.
+A block isolates actions away from the method
+=end
+evens = [2, 4, 6, 8, 10]
+evens.each { |number| puts number ** 3 }
+puts
+
+colors = ["Red", "Purple", "Green", "Blue"]
+statements = colors.map { |color| "#{color} is a great color" }
+puts statements
+puts
+
+5.times do |index|
+	puts index
+	puts "Let's move on to the next loop"
+end
