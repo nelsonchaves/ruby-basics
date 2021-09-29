@@ -34,8 +34,10 @@ def multiple_pass
 end
 
 multiple_pass { puts "Now I'm inside the block" }
+puts
 # So nil is what's return as the final implicit block return.
 result = multiple_pass { puts "Now I'm inside the block" }
 p result
+puts
 
 result = multiple_pass { "Now I'm inside the block" }
