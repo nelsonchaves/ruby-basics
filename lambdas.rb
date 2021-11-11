@@ -15,4 +15,4 @@ p squares_lambda.call(5)
 
 # lambdas are the most popular approach
 # the difference between the 2 how they treat the wrong number of arguments
-A lambda behaves almost like an anonymous
+# A lambda behaves almost like an anonymous
