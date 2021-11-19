@@ -1,46 +1,45 @@
 class Gadget
-end
+  def initialize
+  	@username = "User #{rand(1..100)}"
+  	@password = "topsecret"
+  	@production_number = "#{("a".."z").to_a.sample}-#{rand(1..999)}"
+  end
 
-puts Gadget.superclass
-puts Gadget.superclass.superclass
+  def to_s
+  	"Gadget #{@production_number} has the username #{@username}. It is made from the #{self.class} class and it has the ID #{self.object_id}"
+  end
+
+  def username
+	   @username
+  end
+
+  def production_number
+  	@production_number
+  end
+
+  def username=(new_username)
+  	@username = new_username
+  end
+
+  def password=(new_password)
+  	@password = new_password
+  end
+end
 
 phone = Gadget.new
 laptop = Gadget.new
-microwave = Gadget.new
 
-puts phone
-puts laptop
-puts microwave
+puts phone.to_s
+puts laptop.to_s
 
-puts phone.class
-puts laptop.class
-puts microwave.class
 
-puts phone.is_a?(Gadget)
-puts phone.is_a?(Object)
-puts phone.is_a?(BasicObject)
+p phone.username
+p phone.production_number
+# - Instance methods have access to all instance variables (and can call other instance methods).
 
-puts phone.methods.sort
+p phone.username
+phone.username=("rubyman")
+p phone.username
 
-puts phone.nil?
-
-puts phone.respond_to?(:class)
-puts phone.respond_to?(:is_a?)
-puts phone.respond_to?(:length)
-
-shiny = Gadget.new
-flashy = Gadget.new
-
-puts shiny
-puts flashy
-
-p shiny.object_id
-p flashy.object_id
-
-p shiny == flashy
-p shiny.object_id == flashy.object_id
-
-glossy = shiny
-p glossy.object_id
-p shiny.object_id
-p glossy.object_id == shiny.object_id
+p phone.password=("hotdogs")
+p phone.password = "bestpasswordever"

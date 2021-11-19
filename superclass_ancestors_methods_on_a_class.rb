@@ -1,5 +1,5 @@
 
-puts 3.class == 3.14.class
+# puts 3.class == 3.14.class
 
 
 p 5.class
