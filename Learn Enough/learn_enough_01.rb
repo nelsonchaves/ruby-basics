@@ -1,4 +1,3 @@
-puts "Hello World!"
 =begin
 - REPL - Read Eval Print Loop
 - IRB -
