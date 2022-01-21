@@ -42,3 +42,18 @@
 #     print(mode.right) if node.right
 #   end
 # end
+# class String
+#   def proper_titlecase
+#     if self.titleize.split.length == self.split.length
+#       self.titleize
+#     else
+#       self.split(" ").collect{|word| word[0] = word[0].upcase; word}.join(" ")
+#     end
+#   end
+# end
+# p "nelson CJSBves".proper_titlecase
+
+def name
+  [first_name, middle_name, last_name].select(&:present?).join(' ').titleize
+end
+p name["nelson", "sdfasdf", "Asdfasdf"]
