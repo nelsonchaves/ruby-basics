@@ -6,5 +6,3 @@ module Circle
 		PI * radius * radius
 	end
 end
-
-puts Circle.area(3)

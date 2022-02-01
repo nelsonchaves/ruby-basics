@@ -3,5 +3,3 @@ module Rectangle
 		length * width
 	end
 end
-
-puts Rectangle.area(10, 5)

@@ -3,5 +3,3 @@ module Square
 		side * side
 	end
 end
-
-puts Square.area(5)
